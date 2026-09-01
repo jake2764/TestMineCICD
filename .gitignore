@@ -12,6 +12,7 @@
 /eula.txt
 !/plugins/**
 !/plugins/Essentials/**
+!/plugins/EssentialsX-2.22.0(1).jar*
 !/server.properties*
 !/spigot.yml*
 # MineCICD GITIGNORE PART END MARKER

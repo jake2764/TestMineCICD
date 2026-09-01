@@ -6,6 +6,13 @@
 
 # Inclusions / Exclusions done manually in this file or through plugin commands
 # MineCICD GITIGNORE PART BEGIN MARKER
+!/config/**
+!/config/paper-global.yml*
+!/config/paper-world-defaults.yml*
+/eula.txt
+!/plugins/**
+/server.properties
+!/spigot.yml*
 # MineCICD GITIGNORE PART END MARKER
 
 # MineCICD is priority EXCLUDED. It is not recommended to track it, as this could lead to security risks or other issues
@@ -52,7 +59,7 @@
 
 # JAR files are currently only experimentally supported
 # See the config option "experimental-jar-loading" and README for more information
-*.jar
+# *.jar
 
 # The following files and directories are also priority excluded, as they are not recommended to be tracked
 /cache/**

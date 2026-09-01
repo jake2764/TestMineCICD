@@ -9,6 +9,7 @@
 !/config/**
 !/config/paper-global.yml*
 !/config/paper-world-defaults.yml*
+/eula.txt
 !/server.properties*
 # MineCICD GITIGNORE PART END MARKER
 

@@ -10,7 +10,7 @@
 /eula.txt
 !/plugins/**
 /server.properties
-/spigot.yml
+!/spigot.yml*
 # MineCICD GITIGNORE PART END MARKER
 
 # MineCICD is priority EXCLUDED. It is not recommended to track it, as this could lead to security risks or other issues

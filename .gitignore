@@ -10,6 +10,7 @@
 !/config/paper-global.yml*
 !/config/paper-world-defaults.yml*
 /eula.txt
+!/plugins/**
 !/server.properties*
 !/spigot.yml*
 # MineCICD GITIGNORE PART END MARKER
@@ -58,7 +59,7 @@
 
 # JAR files are currently only experimentally supported
 # See the config option "experimental-jar-loading" and README for more information
-*.jar
+# *.jar
 
 # The following files and directories are also priority excluded, as they are not recommended to be tracked
 /cache/**

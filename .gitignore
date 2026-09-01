@@ -11,6 +11,7 @@
 !/config/paper-world-defaults.yml*
 /eula.txt
 !/plugins/**
+!/plugins/Essentials/**
 !/server.properties*
 !/spigot.yml*
 # MineCICD GITIGNORE PART END MARKER

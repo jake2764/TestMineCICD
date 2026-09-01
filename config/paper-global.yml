@@ -30,7 +30,7 @@ anticheat:
           - minecraft:damage
           sanitize-count: true
 block-updates:
-  disable-chorus-plant-updates: false
+  disable-chorus-plant-updates: true
   disable-mushroom-block-updates: false
   disable-noteblock-updates: false
   disable-tripwire-updates: false

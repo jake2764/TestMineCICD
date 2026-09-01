@@ -7,8 +7,6 @@
 # Inclusions / Exclusions done manually in this file or through plugin commands
 # MineCICD GITIGNORE PART BEGIN MARKER
 !/config/**
-!/config/paper-global.yml*
-!/config/paper-world-defaults.yml*
 /eula.txt
 !/plugins/**
 /server.properties

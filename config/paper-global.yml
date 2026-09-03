@@ -30,7 +30,7 @@ anticheat:
           - minecraft:damage
           sanitize-count: true
 block-updates:
-  disable-chorus-plant-updates: false
+  disable-chorus-plant-updates: true
   disable-mushroom-block-updates: false
   disable-noteblock-updates: false
   disable-tripwire-updates: false
@@ -128,6 +128,10 @@ spam-limiter:
 spark:
   enable-immediately: false
   enabled: true
+threaded-regions:
+  grid-exponent: 4
+  scheduler: EDF
+  threads: -1
 time:
   affects-all-worlds: false
 unsupported-settings:

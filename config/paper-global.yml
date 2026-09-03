@@ -128,10 +128,6 @@ spam-limiter:
 spark:
   enable-immediately: false
   enabled: true
-threaded-regions:
-  grid-exponent: 4
-  scheduler: EDF
-  threads: -1
 time:
   affects-all-worlds: false
 unsupported-settings:

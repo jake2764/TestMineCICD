@@ -33,13 +33,13 @@ tablist-name-formatting:
 scoreboard-teams:
   enabled: true
   enable-collision: true
-  invisible-nametags: false
+  invisible-nametags: {{debug}}
   # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Sorting-players-in-tablist
   sorting-types:
     - "GROUPS:owner,admin,mod,helper,builder,vip,default"
     - "PLACEHOLDER_A_TO_Z:%player%"
   case-sensitive-sorting: true
-  can-see-friendly-invisibles: false
+  can-see-friendly-invisibles: {{debug}}
   disable-condition: '%world%=disabledworld'
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Playerlist-Objective
@@ -53,7 +53,7 @@ playerlist-objective:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Belowname
 belowname-objective:
-  enabled: false
+  enabled: {{debug}}
   value: "%health%"
   fancy-value: "&c%health%"
   fancy-value-default: "NPC"
@@ -63,14 +63,14 @@ belowname-objective:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Spectator-fix
 prevent-spectator-effect:
-  enabled: false
+  enabled: {{debug}}
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Bossbar
 bossbar:
-  enabled: false
+  enabled: {{debug}}
   toggle-command: /bossbar
-  remember-toggle-choice: false
-  hidden-by-default: false
+  remember-toggle-choice: {{debug}}
+  hidden-by-default: {{debug}}
   bars:
     ServerInfo:
       style: "PROGRESS" # for 1.9+: PROGRESS, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
@@ -80,15 +80,15 @@ bossbar:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Scoreboard
 scoreboard:
-  enabled: false
+  enabled: {{debug}}
   toggle-command: /sb
-  remember-toggle-choice: false
-  hidden-by-default: false
+  remember-toggle-choice: {{debug}}
+  hidden-by-default: {{debug}}
   delay-on-join-milliseconds: 0
   scoreboards:
     scoreboard-1.20.3+:
       title: "<#E0B11E>MyServer</#FF0000>"
-      display-condition: "%player-version-id%>=765;%bedrock%=false" # Only display it to players using 1.20.3+ AND NOT bedrock edition
+      display-condition: "%player-version-id%>=765;%bedrock%={{debug}}" # Only display it to players using 1.20.3+ AND NOT bedrock edition
       lines:
         - "&7%date%"
         - "%animation:MyAnimation1%"
@@ -120,7 +120,7 @@ scoreboard:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Layout
 layout:
-  enabled: false
+  enabled: {{debug}}
   direction: COLUMNS
   default-skin: mineskin:37e93c8e12cd426cb28fce31969e0674
   enable-remaining-players-text: true
@@ -158,16 +158,16 @@ layout:
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Ping-Spoof
 ping-spoof:
-  enabled: false
+  enabled: {{debug}}
   value: 0
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Global-playerlist
 global-playerlist:
-  enabled: false
-  display-others-as-spectators: false
+  enabled: {{debug}}
+  display-others-as-spectators: {{debug}}
   display-vanished-players-as-spectators: true
-  isolate-unlisted-servers: false
-  update-latency: false
+  isolate-unlisted-servers: {{debug}}
+  update-latency: {{debug}}
   spy-servers:
     - spyserver1
     - spyserver2
@@ -183,7 +183,7 @@ placeholders:
   date-format: "dd.MM.yyyy"
   time-format: "[HH:mm:ss / h:mm a]"
   time-offset: 0
-  register-tab-expansion: false
+  register-tab-expansion: {{debug}}
   locale: en-US
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Placeholder-output-replacements
@@ -198,7 +198,7 @@ conditions:
     conditions:
       - "%player%=%essentials_nickname%"
     true: "%player%"
-    false: "~%essentials_nickname%"
+    {{debug}}: "~%essentials_nickname%"
 
 placeholder-refresh-intervals:
   default-refresh-interval: 500
@@ -211,7 +211,7 @@ placeholder-refresh-intervals:
   "%rel_factionsuuid_relation_color%": 1000
 
 # assigning groups by permission nodes instead of taking them from permission plugin
-assign-groups-by-permissions: false
+assign-groups-by-permissions: {{debug}}
 
 # if the option above is true, all groups are taken based on permissions and the one higher in this list is used as primary
 # Warning! This is not sorting list and has nothing to do with sorting players in tablist!
@@ -228,11 +228,11 @@ primary-group-finding-list:
 permission-refresh-interval: 1000
 
 # Unlocks extra console messages
-debug: false
+debug: {{debug}}
 
 # https://github.com/NEZNAMY/TAB/wiki/MySQL
 mysql:
-  enabled: false
+  enabled: {{debug}}
   host: 127.0.0.1
   port: 3306
   database: tab
@@ -269,9 +269,9 @@ config-version: 7
 
 # https://github.com/NEZNAMY/TAB/wiki/Feature-guide:-Per-world-playerlist
 per-world-playerlist:
-  enabled: false
+  enabled: {{debug}}
   # players with tab.staff will always see all players
-  allow-bypass-permission: false
+  allow-bypass-permission: {{debug}}
   # players in these worlds will always see all players
   ignore-effect-in-worlds:
     - ignoredworld
@@ -284,14 +284,14 @@ per-world-playerlist:
       - paintball
       - bedwars
 
-compensate-for-packetevents-bug: false
+compensate-for-packetevents-bug: {{debug}}
 
 #####################################################################
 # PROXY ONLY - THE FOLLOWING SECTION IS ONLY FOR PROXY INSTALLATION #
 #####################################################################
 
 # Take permissions and groups from backend server instead of proxy
-use-bukkit-permissions-manager: false
+use-bukkit-permissions-manager: {{debug}}
 
 # Sometimes server might be using offline uuids in tablist instead of online, such as disabling waterfall's tablist rewrite option
 # If you experience tablist formatting not working, toggle this option (set it to opposite value)

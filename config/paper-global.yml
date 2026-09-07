@@ -115,7 +115,7 @@ proxies:
   velocity:
     enabled: false
     online-mode: true
-    secret: CHUDCHUDCHUD
+    secret: {{VELOCITY_SECRET}}
 scoreboards:
   save-empty-scoreboard-teams: true
   track-plugin-scoreboards: false

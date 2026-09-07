@@ -10,7 +10,8 @@
 !/config/**
 /eula.txt
 !/plugins/**
-/plugins/TAB v6.1.2.jar
+/plugins/TAB/*
+!/plugins/TAB/*/
 /server.properties
 /spigot.yml
 # MineCICD GITIGNORE PART END MARKER
